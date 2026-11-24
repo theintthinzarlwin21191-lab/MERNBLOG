@@ -1,0 +1,56 @@
+
+
+.app {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.page-container {
+  width: min(1200px, 100%);
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.section-spacing {
+  padding-block: 64px;
+}
+
+
+
+.counter {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #20352f;
+  background: #e5ece4;
+  border: 1px solid #d5e1d6;
+  transition: all 0.2s ease;
+  margin-bottom: 24px;
+}
+
+.counter:hover {
+  background: #dce8dc;
+  border-color: #8fa995;
+}
+
+.counter:focus-visible {
+  outline: 2px solid #8fa995;
+  outline-offset: 3px;
+}
+
+
+@media (max-width: 640px) {
+  .page-container {
+    padding-inline: 16px;
+  }
+
+  .section-spacing {
+    padding-block: 40px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .counter {
+    transition: none;
+  }
+}
